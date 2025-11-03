@@ -1,1 +1,9 @@
 command: ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+
+env:
+  - name: "USERNAME"
+    valueFrom: "username"
+  - name: "PASSWORD"
+    valueFrom: "password"
+  - name: "SECURITY_TOKEN"
+    valueFrom: "security_token"
